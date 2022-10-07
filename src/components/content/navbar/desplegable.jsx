@@ -5,7 +5,7 @@ const Desplegable = () => {
   return (
     <>
       <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://www.google.com/" role="button" aria-haspopup="true" aria-expanded="false">Seguinos!</a>
+        <a className="nav-link dropdown-toggle divNabvarLinks" data-bs-toggle="dropdown" href="https://www.google.com/" role="button" aria-haspopup="true" aria-expanded="false">Seguinos!</a>
         <div className="dropdown-menu">
           <a className="dropdown-item" href="https://www.instagram.com/cervezakon/" target="_blank" >Instagram</a>
           <a className="dropdown-item" href="https://www.facebook.com/cerveza.kon.3"target="_blank">Facebook</a>
