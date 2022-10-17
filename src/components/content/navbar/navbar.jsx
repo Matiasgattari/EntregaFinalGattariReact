@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Busqueda from './busqueda.jsx';
 import Desplegable from './desplegable.jsx';
 import Links from './links.jsx';
 import Logo from './logo.jsx';
 import DespCat from './despCat.jsx';
-import '../../../estilos/navbar.css'
+import '../../../estilos/navbar.css';
+import { DarkModeContext } from '../../../context/darkModeContext.jsx';
+
 const NavBar = () => {
+  const {toggleDarkMode} = useContext(DarkModeContext);
   const listCategoria = ["Rubias", "Negras", "Rojas"]
   return (
     <>
@@ -22,7 +25,9 @@ const NavBar = () => {
               <Desplegable />
 
             </ul>
-
+            <button onClick={() => toggleDarkMode()}>
+            <i className="fa-solid fa-sun"></i>
+                </button>
             <Busqueda busqueda="Qué buscas?" />
 
           </div>

@@ -1,9 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { consultarBDD } from '../../utils/funcionesUtiles';
-
+import { DarkModeContext } from '../../context/darkModeContext';
 
 const Category = () => {
+
+    const {darkMode} = useContext(DarkModeContext);
+
 
     const [productos, setProductos] = useState([]);
     const { id } = useParams()
@@ -28,7 +31,9 @@ const Category = () => {
         })
     }, [id]);
     return (
-        <div className="row">
+
+        <div className={darkMode ? 'darkMode row': 'row'}>
+            
             {productos}
         </div>
 

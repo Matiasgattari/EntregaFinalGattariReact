@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
+import { DarkModeContext } from '../../context/darkModeContext';
 const Contacto = () => {
+    const {darkMode} = useContext(DarkModeContext);
+
     return (
-        <>
-
-
-
+        <> 
+ <div className={darkMode ? 'darkMode row': 'row'}>
+                       
             <form>
                 <fieldset>
                     <legend>Dejanos tu consulta y te responderemos a la brevedad</legend>
@@ -33,7 +35,7 @@ const Contacto = () => {
 
 
 
-
+            </div>
 
 
 

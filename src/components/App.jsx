@@ -11,12 +11,16 @@ import About from './content/About';
 import Contacto from './content/Contacto';
 import Footer from './content/Footer';
 
+//importo solo el provider ya que en el app no muestro informcion - el que provee informacion no la puede consumir- o sea llamo el provider aca porque no lo uso, pero los componentes hijos si
+import { DarkModeProvider } from '../context/darkModeContext';
+
 const App = () => {
 
     
     return (
 
         <>
+<DarkModeProvider>
 
 <BrowserRouter>
             <NavBar/>
@@ -27,9 +31,14 @@ const App = () => {
               <Route path="/about" element={<About/>} />
               <Route path="/contacto" element={<Contacto/>} />
               <Route path="/cart" element={<Cart/>} />
+              <Route path="*" element={<h1>Error 404, pagina no encontrada.</h1>} />
             </Routes>
             <Footer/>
           </BrowserRouter>
+
+</DarkModeProvider>
+
+
         </>
     );
 }

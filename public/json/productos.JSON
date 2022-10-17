@@ -5,7 +5,7 @@
         "nombre": "Rubia",
         "tamanio": "250ml",
         "precio": 150,
-        "stock": 21,
+        "stock":25,
         "img": "rubia.webp",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
     },

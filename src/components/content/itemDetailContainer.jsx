@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import { useParams } from 'react-router-dom';
 import { consultarBDD } from '../../utils/funcionesUtiles';
-import ItemDetail from './itemDetail';
+import ItemDetail from '../content/contenedorProducto/itemDetail';
 
 
 
