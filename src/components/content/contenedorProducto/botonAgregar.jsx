@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+
 import { useContext } from 'react';
 import { cartContext } from '../../../context/cartContext';
 
@@ -7,15 +7,15 @@ import { cartContext } from '../../../context/cartContext';
 
 const BotonAgregar = ({producto}) => {
 
-    const {cart, agregarProducto, quitarProducto} = useContext(cartContext)
+    const { agregarProducto} = useContext(cartContext)
 
 
     const [contador, setContador] = useState(1);
 
     function modificarCantidad(operacion){
-       if (producto.stock >=1){
+       if (producto[1].stock >=1){
         if (operacion === "+") {
-            if(contador < producto.stock) {setContador(contador + 1)};
+            if(contador < producto[1].stock) {setContador(contador + 1)};
             
             
         } else { if (contador >= 1) {setContador(contador - 1)}

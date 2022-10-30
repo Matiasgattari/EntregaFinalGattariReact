@@ -11,9 +11,10 @@ const CartProvider = (props) => {
 
 
     const agregarProducto = (prod,cant) => {
+        
 const aux = cart
 
-let indice = cart.findIndex(producto => producto.id===prod.id)
+let indice = cart.findIndex(producto => producto[0]===prod[0])
 if(indice !== -1) {
     aux[indice].cantidad = cant
 } else {
@@ -29,12 +30,11 @@ console.log(aux)
 
     const quitarProducto = (prod) =>{
         const aux = cart
-
-        let indice = cart.findIndex(producto => producto.id===prod.id)
-
-        aux.splice(indice,1)
-        setCart(aux)
+        let indice = cart.findIndex(producto => producto[0]===prod[0])
+        aux.splice(indice,1);
+        setCart(aux);
         console.log(aux);
+        
     }
 
 

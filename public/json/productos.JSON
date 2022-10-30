@@ -6,7 +6,7 @@
         "tamanio": "250ml",
         "precio": 150,
         "stock":25,
-        "img": "rubia.webp",
+        "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Frubia.webp?alt=media&token=5faedc4c-3248-45c9-adcf-eafc3597b785",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
     },
     {
@@ -17,7 +17,7 @@
         "tamanio": "250ml",
         "precio": 130,
         "stock": 22,
-        "img": "negra.webp",
+        "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fnegra.webp?alt=media&token=d923aa05-5fd9-4f6c-998e-d1571635e105",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
     },
     {
@@ -28,7 +28,7 @@
         "tamanio": "180ml",
         "precio": 155,
         "stock": 23,
-        "img": "roja.webp",
+        "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Froja.webp?alt=media&token=abdd8dd0-85dc-40e9-a8be-4b812c4f639f",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
     },
     {
@@ -39,7 +39,7 @@
         "tamanio": "280ml",
         "precio": 200,
         "stock": 24,
-        "img": "honey.webp",
+        "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fhoney.webp?alt=media&token=0387aa2e-06f9-4de6-9452-97f43a259973",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
     },
     {
@@ -50,7 +50,7 @@
         "tamanio": "250ml",
         "precio": 200,
         "stock": 25,
-        "img": "ipa.webp",
+        "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fipa.webp?alt=media&token=019c1e87-8cb3-4230-84f4-4a259948db3f",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
     },
     {
@@ -61,7 +61,7 @@
         "tamanio": "250ml",
         "precio": 200,
         "stock": 25,
-        "img": "negra2.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fnegra2.jpg?alt=media&token=251dbf8a-cd37-46c1-9ec6-9c7d21580037",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
     },
     {
@@ -72,7 +72,7 @@
         "tamanio": "250ml",
         "precio": 200,
         "stock": 25,
-        "img": "negra3.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fnegra3.jpg?alt=media&token=2b15e51a-626c-43be-812a-48d41d83c09f",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
     },
     {
@@ -83,7 +83,7 @@
         "tamanio": "250ml",
         "precio": 200,
         "stock": 25,
-        "img": "roja1.jpg",
+        "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Froja1.jpg?alt=media&token=ee9afddd-1631-44b7-a2e5-8dc1e1549784",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
     }
 ]

@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { consultarBDD } from '../../utils/funcionesUtiles';
+
 import { Link } from 'react-router-dom'
 import '../../estilos/App.css'
-
+import { getProductos } from '../../utils/firebase';
 // para contexto darkmode, consulto el contexto ya que el provider lo consulte en app.jsx  . Elemento que consulta el contexto lo tengo que importar
 import { DarkModeContext } from '../../context/darkModeContext';
 
@@ -16,27 +16,55 @@ const {darkMode} = useContext(DarkModeContext);
 
     const [productos, setProductos] = useState([]);
     useEffect(() => {
-        consultarBDD('./json/productos.json').then(productos => {
-            const cardProducto = productos.map(producto =>
+        // consultarBDD('./json/productos.json').then(productos => {
+            // const cardProducto = productos.map(producto =>
 
                 
 
-                <div key={producto.id} className="card mb-3 m-5  d-flex justify-content-center align-items-center" style={{ width: '300px', height: 'auto' }}>
-                    <h3 className="card-header">Cerveza {producto.nombre}</h3>
-                    <div className="card-body">
-                    </div>
-                    <img style={{ width: '100%', height: '200px' }} src={"./img/" + producto.img} className="card-img-top" alt={producto.nombre} />
-                    <div className="card-body">
-                        <p className="card-text"> Categoría: {producto.nombreCategoria}</p>
-                        <p className="card-text">Precio: {producto.precio}</p>
-                        <p className="card-text">Stock disponible: {producto.stock}</p>
-                        <button className='btn btn-dark verProductoBoton'><Link className='nav-link' to={`/producto/${producto.id}`}>Ver Producto</Link></button>
-                    </div>
-                </div>
-            )
+            //     <div key={producto.id} className="card mb-3 m-5  d-flex justify-content-center align-items-center" style={{ width: '300px', height: 'auto' }}>
+            //         <h3 className="card-header">Cerveza {producto.nombre}</h3>
+            //         <div className="card-body">
+            //         </div>
+            //         <img style={{ width: '100%', height: '200px' }} src={producto.img} className="card-img-top" alt={producto.nombre} />
+            //         <div className="card-body">
+            //             <p className="card-text"> Categoría: {producto.nombreCategoria}</p>
+            //             <p className="card-text">Precio: {producto.precio}</p>
+            //             <p className="card-text">Stock disponible: {producto.stock}</p>
+            //             <button className='btn btn-dark verProductoBoton'><Link className='nav-link' to={`/producto/${producto.id}`}>Ver Producto</Link></button>
+            //         </div>
+            //     </div>
+        //     )
 
-            setProductos(cardProducto)
-        })
+        //     setProductos(cardProducto)
+        // })
+
+        const productosFirebase = getProductos().then(
+            elementos => {
+                
+                const cardProducto = elementos.map(producto =>
+
+                
+
+                    <div key={producto[0]} className="card mb-3 m-5  d-flex justify-content-center align-items-center" style={{ width: '300px', height: 'auto' }}>
+                        <h3 className="card-header">Cerveza {producto[1].nombre}</h3>
+                        <div className="card-body">
+                        </div>
+                        <img style={{ width: '100%', height: '200px' }} src={producto[1].img} className="card-img-top" alt={producto[1].nombre} />
+                        <div className="card-body">
+                            <p className="card-text"> Categoría: {producto[1].nombreCategoria}</p>
+                            <p className="card-text">Precio: {producto[1].precio}</p>
+                            <p className="card-text">Stock disponible: {producto[1].stock}</p>
+                            <button className='btn btn-dark verProductoBoton'><Link className='nav-link' to={`/producto/${producto[0]}`}>Ver Producto</Link></button>
+                        </div>
+                    </div>
+
+                )
+                setProductos(cardProducto)
+
+                
+            }
+        )
+
     }, []);
 
 
