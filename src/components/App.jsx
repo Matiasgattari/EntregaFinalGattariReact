@@ -7,7 +7,7 @@ import ItemDetailContainer from './content/itemDetailContainer';
 import Cart from './content/cart';
 
 import Category from './content/category';
-import About from './content/About';
+import FormularioCompra from './content/formularioCompra';
 import Contacto from './content/Contacto';
 import Footer from './content/Footer';
 
@@ -28,14 +28,13 @@ const App = () => {
               <Route path="/" element={<ItemListContainer/>} />
               <Route path="/producto/:id" element={<ItemDetailContainer/>} />
               <Route path="/category/:id" element={<Category/>} />
-              <Route path="/about" element={<About/>} />
+              <Route path="/form" element={<FormularioCompra/>} />
               <Route path="/contacto" element={<Contacto/>} />
               <Route path="/cart" element={<Cart/>} />
               <Route path="*" element={<h1>Error 404, pagina no encontrada.</h1>} />
             </Routes>
             <Footer/>
           </BrowserRouter>
-
 </DarkModeProvider>
 
 

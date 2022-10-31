@@ -7,7 +7,7 @@
         "precio": 150,
         "stock":25,
         "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Frubia.webp?alt=media&token=5faedc4c-3248-45c9-adcf-eafc3597b785",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
+        "descripcion": "De la misma manera que las golden ale, son cervezas en las que casi todo su carácter viene marcado por sus maltas que le otorgan un sabor dulce y afrutado."
     },
     {
         "id": 2,
@@ -18,7 +18,7 @@
         "precio": 130,
         "stock": 22,
         "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fnegra.webp?alt=media&token=d923aa05-5fd9-4f6c-998e-d1571635e105",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
+        "descripcion": "Está considerada como la más intensa, la que tiene 'mayor fuerza'. Es este el motivo por el que este tipo debe consumirse a mayor temperatura, la cual debe estar entre los 8 y 10 grados. Si se sirve a más grados, estará demasiado espesa y consistente."
     },
     {
         "id": 3,
@@ -29,7 +29,7 @@
         "precio": 155,
         "stock": 23,
         "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Froja.webp?alt=media&token=abdd8dd0-85dc-40e9-a8be-4b812c4f639f",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
+        "descripcion": "De color cobre profundo, medianamente turbia, con espuma densa y cremosa. En nariz se aprecian aromas a caramelo con suaves notas a lúpulo. En boca se denota un leve dulzor y sabor a granos tostados."
     },
     {
         "id": 4,
@@ -40,7 +40,7 @@
         "precio": 200,
         "stock": 24,
         "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fhoney.webp?alt=media&token=0387aa2e-06f9-4de6-9452-97f43a259973",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
+        "descripcion": "Cervezas doradas de aspecto cristalino con una abundante y densa espuma, la miel les da un dulzor caracteristico y aroma unico."
     },
     {
         "id": 5,
@@ -51,7 +51,7 @@
         "precio": 200,
         "stock": 25,
         "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fipa.webp?alt=media&token=019c1e87-8cb3-4230-84f4-4a259948db3f",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
+        "descripcion": "Suaves aromas frutados, donde se puede percibir una leve nota sulfurosa (fresca). Suave sabor a malta. Color dorado claro y espuma blanca. Leve dulzor y amargo suave a moderado."
     },
     {
         "id": 6,
@@ -62,7 +62,7 @@
         "precio": 200,
         "stock": 25,
         "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fnegra2.jpg?alt=media&token=251dbf8a-cd37-46c1-9ec6-9c7d21580037",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
+        "descripcion": "Es la mejor cerveza negra del mundo y viene de Colombia. Tiene maltas oscuras, café colombiano y un toque de vainilla. Decir que tiene también un olor y espuma excelentes."
     },
     {
         "id": 7,
@@ -73,7 +73,7 @@
         "precio": 200,
         "stock": 25,
         "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Fnegra3.jpg?alt=media&token=2b15e51a-626c-43be-812a-48d41d83c09f",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
+        "descripcion": "Son cervezas de fermentación baja (lager), aunque originalmente se usaba levadura de fermentación alta para elaborarlas. El contenido alcohólico suele estar entre el 4,8 y el 5 %. Obtienen su color oscuro del uso de maltas especialmente oscuras durante su elaboración."
     },
     {
         "id": 8,
@@ -84,6 +84,6 @@
         "precio": 200,
         "stock": 25,
         "img": "https://firebasestorage.googleapis.com/v0/b/cerveza-kon.appspot.com/o/imagenes%2Froja1.jpg?alt=media&token=ee9afddd-1631-44b7-a2e5-8dc1e1549784",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus quis ab voluptas minima excepturi!"
+        "descripcion": "Como una buena representante de las Honey, esta cerveza roja presenta un color cobre profundo, medianamente turbia, con espuma densa y cremosa."
     }
 ]

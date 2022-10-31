@@ -1,5 +1,10 @@
 import React, {createContext,  useState} from 'react';
 
+// ES6 Modules or TypeScript
+import Swal from 'sweetalert2'
+
+
+
 
 const cartContext =createContext()
 
@@ -24,7 +29,14 @@ if(indice !== -1) {
 setCart(aux)
 console.log(aux)
 
-
+Swal.fire({
+    title: 'Producto agregado correctamente.',
+    width: 400,
+    padding: '3em',
+    color: '#716add',
+    background: 'antiquewhite',
+    backdrop: ` rgba(0,0,123,0.4) `
+  })
     }
 
 
@@ -35,8 +47,30 @@ console.log(aux)
         setCart(aux);
         console.log(aux);
         
-    }
 
+        let timerInterval
+Swal.fire({
+  title: 'Producto eliminado correctamente',
+  text:"Para visualizar los cambios reingrese al carrito",
+  timer: 1500,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+     
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    
+  }
+})
+    }
 
 
     return (

@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {collection, doc, addDoc, getFirestore,getDocs, getDoc,} from "firebase/firestore"
+import {collection, doc, addDoc, getFirestore,getDocs, getDoc, updateDoc, deleteDoc} from "firebase/firestore"
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -56,9 +56,55 @@ const producto = await getDoc(doc(bdd,"productos", id))
 return producto
 }
 
+//Actualizar: es mas facil pisar informacion que cambiarla.
+//modifico cualquier parte.
+const updateProducto = async (id,info) => {
+  const estado = await updateDoc(doc(bdd,"productos", id),info)
+  return estado
+}
+
+//eliminar elemntos de base de datos
+const deleteProducto = async(id) =>{
+const estado = await deleteDoc(doc(bdd,"productos",id))
+return estado
+}
+
+//crear un nuevo producto
+const createProducto = async (objetoProducto) => {
+  const estado = await addDoc(collection(bdd,"productos"), {
+    nombre: objetoProducto.nombre,
+    idCategoria: objetoProducto.idCategoria,
+    nombreCategoria: objetoProducto.nombreCategoria,
+    tamanio: objetoProducto.tamanio,
+    precio: objetoProducto.precio,
+    stock: objetoProducto.stock,
+    img:objetoProducto.img,
+    descripcion: objetoProducto.descripcion
+  })
+  return estado
+}
+
+// genera un id automatico con precio y datos del cliente
+const crearOrdenDeCompra = async (precioTotalCompra, nombre,apellido,email,direccion,dni,productos,fecha) =>{
+const ordenDeCompra = await addDoc(collection(bdd, "ordenDeCompra"), {
+  nombre:nombre,
+  apellido:apellido,
+  email:email,
+  direccion:direccion,
+  dni:dni,
+ precioTotal: precioTotalCompra,
+ productos:productos,
+ fecha:fecha
+})
+return ordenDeCompra
+}
+
+const getOrdenDeCompra= async(id) => {
+const ordenCompra = await getDoc(doc(bdd,"ordenDeCompra",id))
+return ordenCompra
+}
 
 
-
-export {cargarBaseDeDatos,getProductos, getProducto};
+export {cargarBaseDeDatos,getProductos, getProducto, updateProducto, deleteProducto, createProducto, crearOrdenDeCompra,getOrdenDeCompra};
 
 //este archivo solo exporta funciones relacionadas con firebase, no las ejecuta
